@@ -1169,17 +1169,17 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
-            "name": "reload/jira-security-issue",
+            "name": "HotelEngine/jira-security-issue",
             "version": "v1.0.29",
             "source": {
                 "type": "git",
-                "url": "https://github.com/reload/jira-security-issue.git",
-                "reference": "3fc2125956288e7dab2e9d40fbaef6de99f9352e"
+                "url": "https://github.com/HotelEngine/jira-security-issue.git",
+                "reference": "3d10a379e09f3fd42ea8ec7782adaf08aed42426"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reload/jira-security-issue/zipball/3fc2125956288e7dab2e9d40fbaef6de99f9352e",
-                "reference": "3fc2125956288e7dab2e9d40fbaef6de99f9352e",
+                "url": "https://api.github.com/repos/HotelEngine/jira-security-issue/zipball/3d10a379e09f3fd42ea8ec7782adaf08aed42426",
+                "reference": "3d10a379e09f3fd42ea8ec7782adaf08aed42426",
                 "shasum": ""
             },
             "require": {
@@ -1207,8 +1207,8 @@
             ],
             "description": "Create Jira issues if it doesn't exist",
             "support": {
-                "issues": "https://github.com/reload/jira-security-issue/issues",
-                "source": "https://github.com/reload/jira-security-issue/tree/v1.0.29"
+                "issues": "https://github.com/HotelEngine/jira-security-issue/issues",
+                "source": "https://github.com/HotelEngine/jira-security-issue/tree/v1.0.29"
             },
             "time": "2022-12-05T05:14:53+00:00"
         },
