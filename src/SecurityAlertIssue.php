@@ -78,6 +78,7 @@ class SecurityAlertIssue extends JiraSecurityIssue
         $advisory_description = \wordwrap($data['securityVulnerability']['advisory']['description'] ?? '', 100);
         $ecosystem = $data['securityVulnerability']['package']['ecosystem'] ?? '';
         $githubRepo = \getenv('GITHUB_REPOSITORY') ?: '';
+        list($repoOwner, $repoName) = explode('/', $githubRepo);
         $safeVersion = $this->safeVersion ?? 'no fix';
         $alertNumber = $this->alertNumber;
         $advisorySummary = $this->advisorySummary;
@@ -107,7 +108,7 @@ EOT;
 
         $this->setKeyLabel($githubRepo);
         $this->setKeyLabel($this->uniqueId());
-        $this->setTitle("{$this->package} ({$safeVersion}) - {$this->severity}");
+        $this->setTitle("{$repoName} | Dependabot: {$advisorySummary}");
         $this->setBody($body);
 
         $labels = \getenv('JIRA_ISSUE_LABELS');
